@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+	<html>
+		
+		<head>
+			<title>Database Admin Test</title>
+			<script src="queryWithAJAX.js"></script>
+		</head>
+		
+		<body>
+
+		
+		<!--
+			the html is just a text-area to enter queries and
+			a place for the results to go. Note that it's not a 
+			form element so that the button can call AJAX in 
+			JavaScript rather than the php directly
+		-->
+			<section id="querySection">
+				<fieldset>
+					<legend>Query Form</legend>
+					<p>Query: <textarea rows="5" cols="128" name="query" id="query" placeholder="Enter SQL Here"></textarea></p>
+					<p><button onclick="runQuery()">Run Query</button> <button onclick="resetQuery()">Reset Query Form</button></p>
+					<article id="results">
+						<p>(query results will go here)</p>
+					</article>
+				</fieldset>
+			</section>
+		</body>
+
+	</html>
